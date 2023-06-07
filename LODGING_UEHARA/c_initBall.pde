@@ -1,6 +1,11 @@
+int firstBall = (int)random(1);
 void initBall() {
-  x = 10;
-  y = 90;
-  dx = 1;
-  dy = 2;
+  x = width/2;
+  y = 0;
+  if (firstBall == 0) {
+    dx = 7;
+  } else if (firstBall == 1) {
+    dx = -7;
+  }
+  dy = 7;
 }
