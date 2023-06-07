@@ -4,9 +4,9 @@ void BATTLE() {
   showBlocksP1();
   showBlocksP2();
   fill(255, 0, 0);
-  checkAndShowRacketP1(300);
+  racketP1();
   fill(0, 0, 255);
-  checkAndShowRacketP2(width - (300 + P2w));
+  racketP2();
   if (key == 'c') {
     state = RESULT;
   }
