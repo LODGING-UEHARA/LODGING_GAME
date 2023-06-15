@@ -64,6 +64,8 @@ void checkBlocksP2() {
 void showBlocksP1() {
   for (int i = 0; i < blockP1.length ; i++) {
     if (blockP1[i] > 0) {
+      stroke(0);
+      strokeWeight(1);
       rect(0, i * blockHei, blockWid, blockHei);
     }
   }
@@ -72,6 +74,8 @@ void showBlocksP1() {
 void showBlocksP2() {
   for (int i = 0; i < blockP2.length ; i++) {
     if (blockP2[i] > 0) {
+      stroke(0);
+      strokeWeight(1);
       rect(width - blockWid, i * blockHei, blockWid, blockHei);
     }
   }
