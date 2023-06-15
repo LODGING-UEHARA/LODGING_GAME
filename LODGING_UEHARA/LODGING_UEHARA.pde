@@ -6,8 +6,8 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 Minim minim;
 
-int blockP1[] = new int[7];//Player1 block
-int blockP2[] = new int[7];//Player2 block
+int blockP1[] = new int[10];//Player1 block
+int blockP2[] = new int[10];//Player2 block
 
 float b_w = 40, b_h = 40 ;//ball width&height
 float P1w = 70, P1h = 120;//Player1 width&height
