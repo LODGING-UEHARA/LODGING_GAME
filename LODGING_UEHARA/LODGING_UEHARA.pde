@@ -8,6 +8,8 @@ Minim minim;
 
 int blockP1[] = new int[10];//Player1 block
 int blockP2[] = new int[10];//Player2 block
+int charaP1[] = new int[3];
+int charaP2[] = new int[3];
 
 float b_w = 40, b_h = 40 ;//ball width&height
 float P1w = 70, P1h = 120;//Player1 width&height
@@ -20,7 +22,7 @@ float r_y1 = 350;
 float r_x2 = windowWidth - (270 + P2w);
 float r_y2 = 350;
 float x, y, dx, dy;
-boolean w, z, i, m;
+boolean w, z, i, m, a, s, d, j, k, l, enter, shift;
 int winCheckNum;
 int  count = 0;
 

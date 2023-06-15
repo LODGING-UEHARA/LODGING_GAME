@@ -1,4 +1,12 @@
 boolean racketP1() {
+  if (c1==0) {
+  }
+  if (c1==1);
+  {
+  }
+  if (c1==2);
+  {
+  }
   boolean hit = false;
 
   if (w) {
@@ -24,13 +32,22 @@ boolean racketP1() {
     dy = -dy;
     hit = true;
   }
+  noStroke();
   rect(r_x1, r_y1, P1w, P1h);
   return hit;
 }
 
+
 boolean racketP2() {
   boolean hit = false;
-
+  if (c2==0) {
+  }
+  if (c2==1);
+  {
+  }
+  if (c2==2);
+  {
+  }
   if (i) {
     r_y2 -= P2h / 10;
   }
@@ -54,20 +71,7 @@ boolean racketP2() {
     dy = -dy;
     hit = true;
   }
+  noStroke();
   rect(r_x2, r_y2, P2w, P2h);
   return hit;
-}
-
-void keyPressed() {
-  if (key == 'w') w  = true;
-  if (key == 'z') z = true;
-  if (key == 'i') i  = true;
-  if (key == 'm') m = true;
-}
-
-void keyReleased() {
-  if (key == 'w') w  = false;
-  if (key == 'z') z = false;
-  if (key == 'i') i = false;
-  if (key == 'm') m = false;
 }
