@@ -27,6 +27,14 @@ void RESULT() {
     } else if (firstBall == 1) {
       firstBall = 0;
     }
+    selCharCheckP1=false;
+    selCharCheckP2=false;
+    spe1 = 1.055;
+    spe2 = 1.055;
+    bs1 = 10;
+    bs2 = 10;
+    c1=1;
+    c2=2;
     state = TITLE;
   }
 }
