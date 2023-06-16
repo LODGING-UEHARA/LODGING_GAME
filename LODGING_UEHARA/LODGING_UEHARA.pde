@@ -22,7 +22,7 @@ float r_y1 = 350;
 float r_x2 = windowWidth - (270 + P2w);
 float r_y2 = 350;
 float x, y, dx, dy;
-boolean w, z, i, m, a, s, d, j, k, l, enter, shift;
+boolean w, z, i, m, a, s, d, j, k, l, f, h , enter, space, shift;
 int winCheckNum;
 int  count = 0;
 

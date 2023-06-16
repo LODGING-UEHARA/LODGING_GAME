@@ -12,7 +12,10 @@ void keyPressed() {
   if (key == 'k') k = true;
   if (key == 'l') l = true;
 
+  if (key == 'f') f = true;
+  if (key == 'h') h = true;
   if (key == ENTER) enter = true;
+  if (key == ' ') space = true;
   if (key == CODED) if (keyCode == SHIFT) shift = true;
 }
 
@@ -30,7 +33,9 @@ void keyReleased() {
   if (key == 'k') k = false;
   if (key == 'l') l = false;
 
-
+  if (key == 'f') f = false;
+  if (key == 'h') h = false;
   if (key == ENTER) enter = false;
+  if (key == ' ') space = false;
   if (key == CODED) if (keyCode == SHIFT) shift = false;
 }
