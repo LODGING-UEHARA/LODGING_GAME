@@ -39,15 +39,15 @@ void Char3Setting() {
 
 void Char4Setting() {
   if (c1==3) {
-    P1w = 130;
-    P1h = 350;//Player1 width&height
-    spe1 = 1.35;
-    bs1 = 17.5;
+    P1w = 100;
+    P1h = 250;//Player1 width&height
+    spe1 = 1.25;
+    bs1 = 12.5;
   }
   if (c2==3) {
-    P2w = 130;
-    P2h = 350;//Player2 width&height
-    spe2 = 1.35;
-    bs2 = 17.5;
+    P2w = 100;
+    P2h = 250;//Player2 width&height
+    spe2 = 1.25;
+    bs2 = 12.5;
   }
 }

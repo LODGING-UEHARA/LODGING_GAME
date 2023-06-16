@@ -35,6 +35,7 @@ void RESULT() {
     bs2 = 10;
     c1=1;
     c2=2;
+    count = 0;
     state = TITLE;
   }
 }
