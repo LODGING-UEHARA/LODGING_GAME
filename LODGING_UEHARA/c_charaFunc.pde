@@ -35,7 +35,9 @@ boolean racketP1() {
     hit = true;
   }
   noStroke();
-  rect(r_x1, r_y1, P1w, P1h);
+  scale(-1,1);
+  image(Char_battle,-r_x1, r_y1, P1w, P1h);
+  scale(-1,1);
   return hit;
 }
 
@@ -71,6 +73,6 @@ boolean racketP2() {
     hit = true;
   }
   noStroke();
-  rect(r_x2, r_y2, P2w, P2h);
+  image(Char_battle,r_x2, r_y2, P2w, P2h);
   return hit;
 }

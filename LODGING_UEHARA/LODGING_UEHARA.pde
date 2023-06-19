@@ -6,6 +6,14 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 Minim minim;
 
+PImage Char_battle;
+PImage Char_select;
+PImage Char3_select_1;
+PImage Char3_select_2;
+PImage Char3_battle;
+
+PFont Arcade;
+
 int blockP1[] = new int[10];//Player1 block
 int blockP2[] = new int[10];//Player2 block
 int charaP1[] = new int[3];
@@ -17,7 +25,7 @@ float P2w = 70, P2h = 120;//Player2 width&height
 
 float blockWid = 105, blockHei;
 int windowWidth = 1400, windowHeight = 820;
-float r_x1 = 270;
+float r_x1 = 270 + P1w;
 float r_y1 = 350;
 float r_x2 = windowWidth - (270 + P2w);
 float r_y2 = 350;
@@ -41,9 +49,18 @@ void setup() {
   initBall();
   initBlocksP1();
   initBlocksP2();
+  
+  Char_select = loadImage("masato_icon.png");
+  Char3_select_1 = loadImage("masato_icon.png");
+  Char3_select_2 = loadImage("masato_select_03.png");
+  Char3_battle = loadImage("masato_battle_03.png");
+  
+  Arcade = createFont("Arcade Regular.ttf",70);
+  textFont(Arcade);
 }
 
 void draw() {
+  
   switch(state) {
   case TITLE:
     TITLE();
