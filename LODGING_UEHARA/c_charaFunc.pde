@@ -24,17 +24,24 @@ boolean racketP1() {
   if (r_y1 + P1h > height) {
     r_y1 = height - P1h;
   }
-  if (blockHitCheck(r_x1, r_y1, P1w, P1h, x, y, b_w, b_h, dx, dy) == 1) {
+  
+  if (blockHitCheck(r_x1 - P1w, r_y1, P1w, P1h, x, y, b_w, b_h, dx, dy) == 1) {
     dx = -dx * spe1;
     dy = dy * spe1;
-  } else if (blockHitCheck(r_x1, r_y1, P1w, P1h, x, y, b_w, b_h, dx, dy) == 2) {
+    P1_attach.play();
+    P1_attach.rewind();
+  } else if (blockHitCheck(r_x1 - P1w, r_y1, P1w, P1h, x, y, b_w, b_h, dx, dy) == 2) {
     dx = dx * spe1;
     dy = -dy * spe1;
-  } else if (blockHitCheck(r_x1, r_y1, P1w, P1h, x, y, b_w, b_h, dx, dy) == 3) {
+    P1_attach.play();
+    P1_attach.rewind();
+  } else if (blockHitCheck(r_x1 - P1w, r_y1, P1w, P1h, x, y, b_w, b_h, dx, dy) == 3) {
     dy = -dy;
     hit = true;
+    P1_attach.play();
+    P1_attach.rewind();
   }
-  noStroke();
+
   scale(-1,1);
   image(Char_battle,-r_x1, r_y1, P1w, P1h);
   scale(-1,1);
@@ -65,12 +72,18 @@ boolean racketP2() {
   if (blockHitCheck(r_x2, r_y2, P2w, P2h, x, y, b_w, b_h, dx, dy) == 1) {
     dx = -dx * spe2;
     dy = dy * spe2;
+    P2_attach.play();
+    P2_attach.rewind();
   } else if (blockHitCheck(r_x2, r_y2, P2w, P2h, x, y, b_w, b_h, dx, dy) == 2) {
     dx = dx * spe2;
     dy = -dy * spe2;
+    P2_attach.play();
+    P2_attach.rewind();
   } else if (blockHitCheck(r_x2, r_y2, P2w, P2h, x, y, b_w, b_h, dx, dy) == 3) {
     dy = -dy;
     hit = true;
+    P2_attach.play();
+    P2_attach.rewind();
   }
   noStroke();
   image(Char_battle,r_x2, r_y2, P2w, P2h);
